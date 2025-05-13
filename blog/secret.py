@@ -1,1 +1,1 @@
-SECRET_KEY = 'django-insecure-drvt+!ykz4!*=7un0rl68i%f&#16%u@#t18p^phuy)00l87f5s'
+SECRET_KEY = 'django-insecure-drvt+!ykz4!*=7un0rl68i%f&#16%u@#t18p^phuy)00l87f5s' 
