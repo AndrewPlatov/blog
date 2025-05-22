@@ -1,4 +1,14 @@
-{% extends "mainpage/header_footer.html" %}
+{% extends 'mainpage/header_footer.html' %}
+{% load static %}
+{% block menu %}
+   {% include 'mainpage/menu.html' %}
+{% endblock %}
+{% block content %}
+<h1>Я молодец!</h1>
+{% endblock %}
+
+
+{% comment %} {% extends "mainpage/header_footer.html" %}
 {% load static %}
 {% block menu %}
 
@@ -14,4 +24,4 @@
 
 {% block content %}
 <p>Добро пожаловать на наш блог!</p>
-{% endblock %}
+{% endblock %} {% endcomment %}
