@@ -13,3 +13,17 @@ def summary(request):
         'mainpage/summary.html',  # путь к шаблону
         # здесь будут данные!
     )
+    
+from datetime import datetime
+from . import models
+def get_my_blog_posts(request):
+    context = {  # Это словарь контекста, он целиком передается в страницу-шаблон
+        'posts': models.Article.objects.filter(
+            dt__lt=datetime(2025, 5, 21)
+        )
+    }
+    return render(
+        request,
+        'article/page.html',
+        context
+    )
